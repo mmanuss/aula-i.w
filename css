@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    background: linear-gradient(135deg, #6a11cb, #d61aad);
+
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+
+.imagem-central {
+    display: block;
+
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.20);
+
+    transition: transform 0.3s ease;
+}
+
+.imagem-central:hover {
+    transform: scale(1.03);
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    flex-wrap: wrap;
+
+    padding: 22px 35px;
+
+    background-color: rgba(255, 255, 255, 0.95);
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    color: #6a11cb;
+    font-size: 26px;
+    white-space: nowrap;
+}
+
+
+.menu-centro,
+.menu-direita {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+header nav a {
+    display: inline-block;
+
+    padding: 10px 15px;
+
+    border-radius: 8px;
+
+    color: #333;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #2575fc;
+    color: white;
+
+    box-shadow: 0 4px 12px rgba(37, 117, 252, 0.3);
+}
+
+
+main {
+    flex: 1;
+
+    width: calc(100% - 40px);
+    max-width: 900px;
+
+    margin: 50px auto;
+    padding: 55px 35px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    background-color: white;
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+    text-align: center;
+}
+
+main h2 {
+    color: #222;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+main a {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    background-color: #2575fc;
+    color: white;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+
+    box-shadow: 0 5px 15px rgba(37, 117, 252, 0.25);
+
+    transition: 0.3s ease;
+}
+
+main a:hover {
+    background-color: #145edb;
+    transform: translateY(-2px);
+}
+
+
+footer {
+    margin-top: auto;
+    padding: 22px 15px;
+
+    background-color: rgba(255, 255, 255, 0.95);
+
+    color: #555;
+    text-align: center;
+    font-size: 14px;
+
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px 15px;
+        gap: 15px;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    .menu-centro,
+    .menu-direita {
+        width: 100%;
+        gap: 5px;
+    }
+
+    header nav a {
+        padding: 9px 10px;
+        font-size: 14px;
+    }
+
+    main {
+        margin: 25px auto;
+        padding: 40px 20px;
+    }
+
+    main h2 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 380px) {
+    .menu-centro,
+    .menu-direita {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header nav a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #6a11cb, #ce1bd4);
+
+    font-family: Arial, sans-serif;
+}
+
+.recuperar {
+    width: 400px;
+    max-width: calc(100% - 30px);
+
+    background-color: white;
+
+    padding: 40px;
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+    text-align: center;
+}
+
+.recuperar h1 {
+    color: #222;
+    font-size: 27px;
+
+    margin-bottom: 15px;
+}
+
+.recuperar p {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.5;
+
+    margin-bottom: 25px;
+}
+
+.recuperar form {
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+}
+
+.recuperar label {
+    margin-bottom: 8px;
+
+    color: #333;
+    font-weight: bold;
+}
+
+.recuperar input {
+    width: 100%;
+
+    padding: 13px;
+    margin-bottom: 20px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    font-size: 15px;
+    outline: none;
+
+    transition: border-color 0.3s;
+}
+
+.recuperar input:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 5px rgba(37, 117, 252, 0.2);
+}
+
+
+.recuperar button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #2575fc;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.recuperar button:hover {
+    background-color: #145edb;
+    transform: translateY(-2px);
+}
+
+.recuperar > a {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    color: #2575fc;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: color 0.3s;
+}
+
+.recuperar > a:hover {
+    color: #6a11cb;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 480px) {
+    .recuperar {
+        padding: 30px 22px;
+    }
+
+    .recuperar h1 {
+        font-size: 24px;
+    }
+}
